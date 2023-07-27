@@ -8,8 +8,10 @@ class ChooseLocation extends StatefulWidget {
 }
 
 class _ChooseLocationState extends State<ChooseLocation> {
+
   @override
   Widget build(BuildContext context) {
+    print('Build Function ran');
     return Scaffold(
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
@@ -17,9 +19,6 @@ class _ChooseLocationState extends State<ChooseLocation> {
         title: Text('Choose a Location'),
         centerTitle: true,
         elevation: 20,
-      ),
-      body: SafeArea(
-          child: Text("Choose Location Screen")
       ),
     );
   }
